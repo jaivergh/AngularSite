@@ -13,7 +13,7 @@ export class SalesDataService {
       .get('http://localhost:5000/api/order/' + pageIndex + '/' + pageSize);
   }
 
-  getOrdersByCustomer(n: number){
+  getOrdersByCustomer(n: number): any{
     return this._http
       .get('http://localhost:5000/api/order/bycustomer/' + n);
   }

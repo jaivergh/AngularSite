@@ -48,7 +48,6 @@ export class BarChartComponent implements OnInit {
       r.push([moment(e.placed).format('YY-MM-DD'), e.total]);
       return r;
     }, []);
-    console.log('formatedOrders:', formatedOrders);
 
     const p = [];
 
@@ -63,7 +62,6 @@ export class BarChartComponent implements OnInit {
       return r;
     }, []);
 
-    console.log('chartData:', chartData);
 
     return chartData;
 
